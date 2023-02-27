@@ -1,0 +1,30 @@
+a = int(input('Podaj dlugosc boku A: '))
+b = int(input('Podaj dlugosc boku B: '))
+c = int(input('Podaj glugosc boku C: '))
+
+boki = [a,b,c]
+boki.sort()
+
+def isTriangle(boki):
+    
+    if boki[0]+boki[1]>=boki[2]:
+        print('Mozna stworzyć trójkąt')
+    else:
+        print('Nie zbudujemy trójkąta')
+
+def isPit(boki):
+    
+    if (boki[0]**2)+(boki[1]**2)==(boki[2]**2):
+        print('Trójkąt pitagorejski')
+    else:
+        print('Trójkąt nie pitagorejski')
+
+def isEypt(boki):
+    if boki[1]==(boki[0]/3+boki[0]) and boki[2]==(boki[0]/3+boki[1]):
+        print('Trójkąt egipski')
+    else:
+        print('Trójkąt nie jest egipski') 
+
+isTriangle(boki)
+isPit(boki)
+isEypt(boki)

@@ -7,8 +7,7 @@ def checkBrackets(brack):
     rightb2=brack.count(']')
     leftb3=brack.count('(')
     rightb3=brack.count(')')
-    leftb4=brack.count('<')
-    rightb4=brack.count('>')
+   
 
     if leftb1==rightb1:
        if leftb2==rightb2:
